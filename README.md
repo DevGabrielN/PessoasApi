@@ -39,7 +39,7 @@ Value Objects são objetos imutáveis que representam valores que não possuem i
 
 - **Commands:** Utilizado para encapsular uma solicitação como um objeto, permitindo parametrizar clientes com diferentes solicitações. Foi utilizado para segregar as regras de negócio.
 
-- **Mediator:** Utilizado para centralizar as interações entre objetos, promovendo o baixo acoplamento entre eles. Foi utilizado para melhorar a eficiência dos commands, dessa forma enviando automaticámente o command para seu respectivo handler
+- **Mediator:** Foi utilizado para melhorar a eficiência dos commands, dessa forma enviando automaticámente o command para seu respectivo handler
 
 - **Repository:** Utilizado para abstrair a lógica de acesso aos dados, fornecendo uma interface comum para acessar e manipular os dados. Promovendo assim a modularidade e facilitando a troca de tecnologias de armazenamento de dados sem afetar o restante da aplicação.
 

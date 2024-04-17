@@ -4,7 +4,7 @@ Este é um projeto de API desenvolvido em .NET 8 que gerencia dados de pessoas. 
 
 ## Requisitos
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0){:target="_blank"}
+- [.NET 8 SDK](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)
 
 ## Como rodar o projeto?
 - Clone o projeto para sua máquina, usando o comando `git clone git@github.com:DevGabrielN/PessoasApi.git`

@@ -14,20 +14,20 @@ Este é um projeto de API desenvolvido em .NET 8 que gerencia dados de pessoas. 
 
 ## Estrutura do projeto
 - `People.API`
- - `People.API.Controllers`: Contém as controllers do sistema, bem como seus endpoints.
- - `Progam.cs`: Arquivo onde é configurado a utilização dos serviços: Swagger, Identity, FluentValidation, EntityFramework, AutoMapper e MediatR.
+  - `People.API.Controllers`: Contém as controllers do sistema, bem como seus endpoints.
+  - `Progam.cs`: Arquivo onde é configurado a utilização dos serviços: Swagger, Identity, FluentValidation, EntityFramework, AutoMapper e MediatR.
 - `People.Domain`: Projeto onde é definido as regras de negócio mais importantes do sistema.
- - `People.Domain.Commands`: Contém a definição dos commands, bem como seus handlers, que executam de fato o command.
- - `People.Domain.DTOs`: São utilizados DTOs (Data Transfer Objects) para representar os dados de forma mais eficiente e segura.
- - `People.Domain.Entities`: Representam as entidades do banco de dados.
- - `People.Domain.Erros`: Define as mensagens padrões de erros para o Fluent Validation.
- - `People.Domain.Interfaces`: Aqui são definidos os contratos da aplicação
- - `People.Domain.Profiles`: Onde consta os mapeamentos do AutoMapper, que facilitam na conversão de objetos. Exemplo: User > ReadUserDto
- - `People.Domain.Validators`: Define os contratos de validações das entidades aplicando o conceito de Design By Contracts, utilizando o Fluent Validation. Isso permite criar validações complexas e de forma fluída dos objetos, facilitando a reutilização em todo o sistema. Por exemplo, o código para validar uma string como UF é o mesmo para validar o membro UF da classe Person. Essa segregação das validações de forma fluente facilita muito na criação de testes unitários.
- - `People.Domain.ValueObjects`: Esta seção trata dos objetos de valor. Os objetos de valor, essenciais no Domain-Driven Design (DDD), representam conceitos imutáveis, como endereços ou datas. Agrupá-los em uma camada específica facilita sua reutilização em todo o domínio da aplicação.
+  - `People.Domain.Commands`: Contém a definição dos commands, bem como seus handlers, que executam de fato o command.
+  - `People.Domain.DTOs`: São utilizados DTOs (Data Transfer Objects) para representar os dados de forma mais eficiente e segura.
+  - `People.Domain.Entities`: Representam as entidades do banco de dados.
+  - `People.Domain.Erros`: Define as mensagens padrões de erros para o Fluent Validation.
+  - `People.Domain.Interfaces`: Aqui são definidos os contratos da aplicação
+  - `People.Domain.Profiles`: Onde consta os mapeamentos do AutoMapper, que facilitam na conversão de objetos. Exemplo: User > ReadUserDto
+  - `People.Domain.Validators`: Define os contratos de validações das entidades aplicando o conceito de Design By Contracts, utilizando o Fluent Validation. Isso permite criar validações complexas e de forma fluída dos objetos, facilitando a reutilização em todo o sistema. Por exemplo, o código para validar uma string como UF é o mesmo para validar o membro UF da classe Person. Essa segregação das validações de forma fluente facilita muito na criação de testes unitários.
+  - `People.Domain.ValueObjects`: Esta seção trata dos objetos de valor. Os objetos de valor, essenciais no Domain-Driven Design (DDD), representam conceitos imutáveis, como endereços ou datas. Agrupá-los em uma camada específica facilita sua reutilização em todo o domínio da aplicação.
 - `People.Infra`: Camada de infraestrutura e acesso ao banco de dados
-- `People.Infra.Data`: Contém os contexto de acesso a dados das entidades
-- `People.Infra.Repositories`: Alocam as implementações concretas das interfaces de repositório, aplicando o conceito do Design Pattern Repository. Este padrão é utilizado para separar a lógica de acesso a dados da lógica de negócios.
+  - `People.Infra.Data`: Contém os contexto de acesso a dados das entidades
+  - `People.Infra.Repositories`: Alocam as implementações concretas das interfaces de repositório, aplicando o conceito do Design Pattern Repository. Este padrão é utilizado para separar a lógica de acesso a dados da lógica de negócios.
 
 
 ### Arquitetura DDD

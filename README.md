@@ -7,7 +7,7 @@ Este é um projeto de API desenvolvido em .NET 8 que gerencia dados de pessoas. 
 - [.NET 8 SDK](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)
 
 ## Como rodar o projeto?
-- Clone o projeto para sua máquina, usando o comando git clone git@github.com:DevGabrielN/PessoasApi.git
+- Clone o projeto para sua máquina, usando o comando `git clone git@github.com:DevGabrielN/PessoasApi.git`
 - Abra o projeto no Visual Studio, VS Code ou IDE se sua escolha, e defina o projeto People.API como o de inicialização
   - Ou abra o CMD, navege até a pasta do projeto People.API, e execute o comando: dotnet run --launch-profile https
 - Acesse via `https://localhost:{PORTA}/swagger`
